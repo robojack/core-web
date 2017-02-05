@@ -1,0 +1,9 @@
+.DS_store
+tmp
+.sass-cache/
+.ruby-version
+node_modules
+bower_components
+_site
+.jekyll-metadata
+*.sublime-*
