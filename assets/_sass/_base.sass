@@ -1,0 +1,66 @@
+//----------------------------------------------------
+// Colors
+//----------------------------------------------------
+
+$color-text : #222
+
+
+
+//----------------------------------------------------
+// Fonts
+//----------------------------------------------------
+
+=sans-serif
+  font-family: "HelveticaNeue", Helvetica, sans-serif
+
+
+
+//----------------------------------------------------
+// Z-indices
+//----------------------------------------------------
+
+$z-header  : 1000
+$z-overlay : 5000
+
+
+
+//----------------------------------------------------
+// Breakpoints
+//----------------------------------------------------
+
+$mq-mobile : 48em //768px
+
+=mobile
+  @media only screen and (max-width: $mq-mobile)
+    @content
+
+=desktop
+  @media only screen and (min-width: $mq-mobile + 0.0625em)
+    @content
+
+
+
+//----------------------------------------------------
+// Sub-pixel font rendering
+//----------------------------------------------------
+
+=antialiased
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+
+=disable-antialiased
+  -webkit-font-smoothing: subpixel-antialiased
+  font-smoothing: never
+
+
+
+//----------------------------------------------------
+// Accessibility mixins
+//----------------------------------------------------
+
+=visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  overflow: hidden
+  clip: rect(1px, 1px, 1px, 1px)

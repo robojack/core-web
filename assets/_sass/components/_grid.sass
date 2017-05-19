@@ -1,0 +1,32 @@
+//----------------------------------------------------
+// Gutters and site width
+//----------------------------------------------------
+
+$gutter     : 0.75rem // 12px
+$grid-width : 65rem   // 1040px
+
+
+
+//----------------------------------------------------
+// Grid
+//----------------------------------------------------
+
+.row
+  max-width: $grid-width
+  margin-left: auto
+  margin-right: auto
+
+.grid
+  display: flex
+  flex-flow: row wrap
+  margin-left: -$gutter
+  margin-right: -$gutter
+  position: relative
+
+.grid > *
+  flex: 1 1 12.5em // 100px, based on 12-column grid
+  margin-left: $gutter
+  margin-right: $gutter
+  max-width: 20em
+
+// To override, redefine `flex-basis` for `.grid > [your target selector]` or sub-class `.grid` (e.g. `.product-grid`)
