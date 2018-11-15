@@ -1,0 +1,27 @@
+//----------------------------------------------------
+// Accessibility
+//----------------------------------------------------
+
+a[href="#main"] {
+  background-color: $color-link;
+  color: white;
+  display: inline-block;
+  padding: 1em;
+  position: absolute;
+  top: -100%;
+  left: 0;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+// Extendable
+.visually-hidden,
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

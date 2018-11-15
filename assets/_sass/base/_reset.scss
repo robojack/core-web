@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  margin: 0;
+}
+
+main,
+li,
+dt,
+dd,
+br,
+th,
+td {
+  margin-top: 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+//----------------------------------------------------
+// Normalize search field
+//----------------------------------------------------
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
