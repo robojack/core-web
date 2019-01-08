@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <!-- a viewport declaration which does not disable zooming -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- a viewport declaration which does not disable zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ICONS -->
-    <!-- iPad retina icon -->
-    <link href="https://placehold.it/152" sizes="152x152" rel="apple-touch-icon-precomposed">
-    <!-- iPad retina icon (iOS < 7) -->
-    <link href="https://placehold.it/144" sizes="144x144" rel="apple-touch-icon-precomposed">
-    <!-- iPad non-retina icon -->
-    <link href="https://placehold.it/76" sizes="76x76" rel="apple-touch-icon-precomposed">
-    <!-- iPad non-retina icon (iOS < 7) -->
-    <link href="https://placehold.it/72" sizes="72x72" rel="apple-touch-icon-precomposed">
-    <!-- iPhone 6 Plus icon -->
-    <link href="https://placehold.it/180" sizes="120x120" rel="apple-touch-icon-precomposed">
-    <!-- iPhone retina icon (iOS < 7) -->
-    <link href="https://placehold.it/114" sizes="114x114" rel="apple-touch-icon-precomposed">
-    <!-- iPhone non-retina icon (iOS < 7) -->
-    <link href="https://placehold.it/57" sizes="57x57" rel="apple-touch-icon-precomposed">
+  <!-- ICONS -->
+  <!-- iPad retina icon -->
+  <link href="https://placehold.it/152" sizes="152x152" rel="apple-touch-icon-precomposed">
+  <!-- iPad retina icon (iOS < 7) -->
+  <link href="https://placehold.it/144" sizes="144x144" rel="apple-touch-icon-precomposed">
+  <!-- iPad non-retina icon -->
+  <link href="https://placehold.it/76" sizes="76x76" rel="apple-touch-icon-precomposed">
+  <!-- iPad non-retina icon (iOS < 7) -->
+  <link href="https://placehold.it/72" sizes="72x72" rel="apple-touch-icon-precomposed">
+  <!-- iPhone 6 Plus icon -->
+  <link href="https://placehold.it/180" sizes="120x120" rel="apple-touch-icon-precomposed">
+  <!-- iPhone retina icon (iOS < 7) -->
+  <link href="https://placehold.it/114" sizes="114x114" rel="apple-touch-icon-precomposed">
+  <!-- iPhone non-retina icon (iOS < 7) -->
+  <link href="https://placehold.it/57" sizes="57x57" rel="apple-touch-icon-precomposed">
 
-    <!-- a non-blocking stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css" media="none" onload="if(media!='all')media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript>
+  <!-- a non-blocking stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" media="none" onload="if(media!='all')media='all'">
+  <noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript>
 
-    <title>[Page title] | [Site name]</title>
+  <title>[Page title] | [Site name]</title>
   </head>
   <body>
-    <!-- a handy skip link for keyboard users -->
-    <a href="#main">skip to main content</a>
+  <!-- a handy skip link for keyboard users -->
+  <a href="#main">skip to main content</a>
 
-    <!-- logo / page navigation etc. goes here -->
+  <!-- SVG icon sprites (https://fvsch.com/svg-icons/) -->
+  <svg aria-hidden="true" focusable="false" style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-arrow" viewBox="0 0 20 20">
+        <path d="M5.53 1.532a1.81 1.81 0 0 0 0 2.558l5.91 5.912-5.91 5.91a1.81 1.81 0 0 0 2.557 2.559l7.192-7.193a1.81 1.81 0 0 0 0-2.557L8.091 1.532a1.807 1.807 0 0 0-2.562 0z"></path>
+      </symbol>
+    </defs>
+  </svg>
 
-    <main id="main">
-      <!-- unique content of page goes here -->
-    </main>
+  <!-- logo / page navigation etc. goes here -->
 
-    <!-- a non-blocking javascript resource -->
-    <script src="assets/js/scripts.js"></script>
+  <main id="main">
+    <!-- unique content of page goes here -->
+
+    <!-- Example use of an icon from the SVG sprites -->
+    <svg class="icon icon-arrow" aria-hidden="true" focusable="false">
+      <use xlink:href="#icon-arrow"></use>
+    </svg>
+    <span class="access-label">Accessible description of icon</span>
+  </main>
+
+  <!-- a non-blocking javascript resource -->
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
